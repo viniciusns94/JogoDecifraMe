@@ -4,10 +4,15 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="JogoDecifraMe.Page1">
+             x:Class="JogoDecifraMe.Page1"
+             Title="Pergunta 1"
+             BackgroundColor="Aqua">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" />
+            <Label Text="Nome" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" FontSize="Large" TextColor="Black"/>
+            <Entry x:Name="entryResposta" HorizontalOptions="FillAndExpand" BackgroundColor="White" />
+            <Button Text="Responder" Clicked="Button_Clicked"/>
+            <Button Text="Voltar para o início" Clicked="Button_Clicked_1"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
