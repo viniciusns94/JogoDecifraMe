@@ -16,5 +16,23 @@ namespace JogoDecifraMe
         {
             InitializeComponent();
         }
+
+        private async void Button_Clicked(object sender, EventArgs e)
+        {
+            var texto = entryResposta.Text;
+            if (texto.ToUpper().Equals("AZUL"))
+            {
+                await Navigation.PushAsync(new Page3());
+            }
+            else
+            {
+                await DisplayAlert("A Esfinge fala:", "Continue assim meu estômago agradece!", "OK");
+            }
+        }
+
+        private async void Button_Clicked_1(object sender, EventArgs e)
+        {
+            await Navigation.PopToRootAsync();
+        }
     }
 }

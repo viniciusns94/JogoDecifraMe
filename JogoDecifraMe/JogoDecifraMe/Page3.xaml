@@ -4,12 +4,13 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="JogoDecifraMe.Page3">
+             x:Class="JogoDecifraMe.Page3"
+             Title="Vitória"
+             BackgroundColor="Yellow">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Label Text="Parabéns !! Você venceu !!!" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" FontSize="Large" TextColor="Black"/>
+            <Button Text="Reiniciar Jogo" Clicked="Button_Clicked"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
